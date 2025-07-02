@@ -1,0 +1,14 @@
+.grid{
+      display:grid;
+      background-color:powderblue;
+      grid-template-columns:auto auto auto;
+      gap:10px;
+      padding:10px;
+}
+.grid >div {
+           background-color:#f1f1f1;
+           color:black;
+           text-align:center;
+           font-size:30px;
+           padding:20px;
+}

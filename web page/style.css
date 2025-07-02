@@ -1,0 +1,148 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #003f5c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://source.unsplash.com/1600x600/?nature,travel');
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 5px #000;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.3rem;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+.section img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Submit Button */
+.submit-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+.submit-section button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #003f5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-section button:hover {
+  background-color: #005c8f;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+.footer-logo {
+  height: 40px;
+  margin-bottom: 10px;
+}
+footer a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Login Page */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+.login-container h2 {
+  margin-bottom: 1.5rem;
+}
+.login-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.login-container button {
+  padding: 0.7rem 2rem;
+  background-color: #003f5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-container button:hover {
+  background-color: #005c8f;
+}
+.back-link {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #003f5c;
+}
+.back-link:hover {
+  text-decoration: underline;
+}

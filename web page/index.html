@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hungeride Travel</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color:seagreen;
+    }
+
+    /* Header */
+    header {
+      background-color: #004d4d;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url("https://www.candorblog.com/wp-content/uploads/2017/05/travel-022.jpg");
+      height: 60vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #003f5c;
+      text-shadow: 1px 1px 5px black;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    /* Sections */
+    .section {
+      padding: 2rem;
+      text-align: center;
+      background-color: #fff;
+      margin-bottom: 1rem;
+    }
+    .section img {
+      max-width: 90%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+
+    /* Submit Button */
+    .submit-section {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .submit-section button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      background-color: #003f5c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .submit-section button:hover {
+      background-color: #005c8f;
+    }
+
+    /* Footer */
+    footer {
+      background-color:seagreen;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .footer-logo {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Login Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      color: #333;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .modal-content h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .modal-content input {
+      width: 100%;
+      padding: 0.7rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .modal-content button {
+      padding: 0.7rem 1.5rem;
+      background-color: #003f5c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .modal-content button:hover {
+      background-color: #005c8f;
+    }
+    .close {
+      float: right;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .modal-content .back-link {
+      display: block;
+      margin-top: 1rem;
+      text-align: center;
+      color: #003f5c;
+      text-decoration: none;
+    }
+    .modal-content .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Hungeride</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#help">Help</a>
+      <a href="#" onclick="openLogin()">Sign In</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Explore the World with Hungeride</h1>
+      <p>Your adventure starts now!</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Hungeride</h2>
+    <p>We provide the best travel deals and packages to make your journey unforgettable.</p>
+    <img src="https://wallpapercave.com/wp/wp4782956.jpg" alt="About Travel">
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>✈️ Flight and Hotel Booking</li>
+      <li>🏝️ Holiday Packages</li>
+      <li>🗺️ Customized Travel Plans</li>
+    </ul>
+    <img src=("pictures/pic1.jpg") alt="Services Image" style="width=200px; height=300px;">
+  </section>
+
+  <!-- Help Section -->
+  <section id="help" class="section">
+    <h2>Need Help?</h2>
+    <p>Contact our 24/7 support team for any assistance regarding your travel plans.</p>
+  </section>
+
+  <!-- Submit -->
+  <div class="submit-section">
+    <button>Submit</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <img src="https://hungeride.com/assets/logo_hungeride.png" alt="Logo" class="footer-logo">
+    <p>© 2025 Hungeride | <a href="https://www.hungeride.com" target="_blank">www.hungeride.com</a></p>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLogin()">&times;</span>
+      <h2>Login to Hungeride</h2>
+      <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function openLogin() {
+      document.getElementById('loginModal').style.display = 'flex';
+    }
+
+    function closeLogin() {
+      document.getElementById('loginModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('loginModal');
+      if (event.target === modal) {
+        closeLogin();
+      }
+    };
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* Apply a background and center the form */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form container */
+form {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  color: #333333;
+}
+
+/* Fieldset and legend styling */
+fieldset {
+  border: 2px solid #0077cc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+  color: #0077cc;
+  padding: 0 10px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444444;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Radio button alignment */
+input[type="radio"] {
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #005fa3;
+}
